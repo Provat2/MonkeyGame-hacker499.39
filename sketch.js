@@ -100,13 +100,15 @@ function draw(){
     fill("white");
     textSize(20);
     text("Press 'r' to restart", 100, displayHeight/4);
-    text("Press space to change player", displayWidht - 150, 40);
-    if (keyDown("space")){
-      location.reload();    
-    }    
     textSize(40);
     text("GAME OVER", displayWidth/2, displayHeight/2);
-    text("Total Score: " + score, displayWidth/2, displayHeight/2 + 100)
+    text("Total Score: " + score, displayWidth/2, displayHeight/2 + 100);
+    textSize(15);
+    text("Press space to change player", displayWidth-300, 40);
+    if(keyDown("space")){
+      console.log("wanted to reset");
+      location.reload();
+    }
     
     if (keyDown("r")){
       gameState = 1;
