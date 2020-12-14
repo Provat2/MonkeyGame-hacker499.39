@@ -101,7 +101,7 @@ function draw(){
     textSize(20);
     text("Press 'r' to restart", 100, displayHeight/4);
     text("Press space to change player", displayWidht - 150, 40);
-    if (keyDown("space"){
+    if (keyDown("space")){
       location.reload();    
     }    
     textSize(40);
